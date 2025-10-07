@@ -4,7 +4,7 @@
 #3) nadajemy temu kawałkowi pamięci liczba całkowita
 
 liczba_calkowita = 45
-print(type(liczba_całkowita))
+print(type(liczba_calkowita))
 
 liczba_z_przecinkiem = 2.65
 print(type(liczba_z_przecinkiem))
@@ -28,5 +28,5 @@ zbior = {5, 5, 5, 6, 1, 9,}
 print(zbior)
 print(type(zbior))
 
-słownik = {'dekadentyzm': 'prąd filozoficzny głoszący, że nic nie ma sensu', 5: 'pięć'
+słownik = {'dekadentyzm': 'prąd filozoficzny głoszący, że nic nie ma sensu', 5: 'pięć'}
 print(type(słownik))

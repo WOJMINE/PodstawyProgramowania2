@@ -47,20 +47,20 @@ else:
     print('xyz nie jest w napisie')
 
 #2.)Podział tekstu na fragmenty
-'''piec_liczb = input('Podaj pięć liczb. Oddziel je przecinkiem: ')
+piec_liczb = input('Podaj pięć liczb. Oddziel je przecinkiem: ')
 piec_liczb_po_podziale = piec_liczb.split(',')
 print(piec_liczb_po_podziale)
 trzecia_liczba = int(piec_liczb_po_podziale[2])
 print(trzecia_liczba + 33)
-'''
+
 
 #3.) Łączenie naoisów
-lista_napisów = ['Windows', 'jest', 'tworzony', 'dla', 'kasy']
-cale_zdanie = '$'.join(lista_napisów)
+lista_napisow = ['Windows', 'jest', 'tworzony', 'dla', 'kasy']
+cale_zdanie = '$'.join(lista_napisow)
 print(cale_zdanie)
 
-lista_napisów2 = ['abc', 'xyz', 'bbc', 'tvn']
-cale_zdanie2 = '\n',join(lista_napisów2)
+lista_napisow2 = ['abc', 'xyz', 'bbc', 'tvn']
+cale_zdanie2 = '\n'.join(lista_napisow2)
 print(cale_zdanie2)
 
 #4.) Zliczanie daniego znaku w tekście

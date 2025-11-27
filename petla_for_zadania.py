@@ -55,3 +55,15 @@ for x in range(n):
     suma = suma + liczba
 
 print(suma)
+
+lista = [7]
+
+for i in lista:
+    liczba = float(input('Podaj liczbę: '))
+    print(liczba)
+    if liczba != 0:
+        lista.append(11)
+
+for k in lista:
+    print(k)
+    lista.append(k + 1)

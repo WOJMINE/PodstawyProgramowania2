@@ -1,3 +1,5 @@
+'''from math import inf
+#inf - bardzo duża liczba
 #Zadanie 15.
 #a)
 X = list(range(0, 103, 3))
@@ -62,8 +64,45 @@ for i in lista:
     liczba = float(input('Podaj liczbę: '))
     print(liczba)
     if liczba != 0:
-        lista.append(11)
+        'lista.append(1)'
 
 for k in lista:
     print(k)
-    lista.append(k + 1)
+    'lista.append(k + 1)'
+
+#Zadanie 17
+n = int(input('Podaj ile będzie liczb'))
+suma = 0
+max_liczba = -inf
+min_liczba = inf
+liczby_mniejsze_od_3 = 0
+ile_przedzial = 0
+
+for x in range(n):
+    liczba = int(input('Podaj liczbę'))
+    suma = suma + liczba
+    if liczba > max_liczba:
+        max_liczba = liczba
+    if liczba > min_liczba:
+        min_liczba = liczba
+    if liczba < 3:
+        liczby_mniejsze_od_3 += 1
+    if liczba > -2 and liczba <= 11:
+        ile_przedzial += 1
+
+print(suma)
+print(suma / n)
+print(max_liczba)
+print(min_liczba)
+print(liczby_mniejsze_od_3)
+print(ile_przedzial)
+'''
+n = int(input('Podaj ile będzie liczb'))
+
+lista5 = []
+for x in range(n):
+    liczba = int(input('Podaj liczbę'))
+    lista5.append(liczba)
+print(sum(lista5))
+print(sum(lista5) / n)
+print(max(lista5))

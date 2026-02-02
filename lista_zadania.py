@@ -35,7 +35,7 @@ print(lista1)
 lista1_posortowana = sorted(lista1)
 print(lista1_posortowana)
 print(lista1_posortowana[0], lista1_posortowana[-1])
-print(min(lista1, max(lista1)))
+print(min(lista1), max(lista1))
 
 #g.
 del lista1[4]
@@ -50,3 +50,10 @@ while 2 in lista1:
 
 lista1 = [x for x in lista1 if x != 2]
 print(lista1)
+
+#j)
+# lista3 = [x ** 2 for x in lista1]
+lista3 = []
+for x in lista1:
+    lista3.append(x ** 2)
+print(lista3)

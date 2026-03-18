@@ -51,4 +51,60 @@ def liczby_niezaleznie(lista):
     return wynik
 print(liczby_niezaleznie([12, 7, 3, 6, 21, 74]))
 
-#Dom. 2.4; 2.5; 2.6; 2.7; 2.8
+
+#Zadanie 1
+def powiel(napis, n):
+    return napis * n
+print(powiel('Kultura ponad wszystko\n', 10))
+
+#Zadanie 3.1
+def ile_dzielnikow(liczba):
+    ileliczb = 0
+    for d in range(1, liczba + 1):
+        if liczba % d == 0:
+            ileliczb += 1
+    return ileliczb
+print(ile_dzielnikow(12))
+
+#Zadanie 3.2
+def czy_pierwsza(lcd):
+    if lcd < 10:
+        print(True)
+    else:
+        print(False)
+    return lcd
+print(czy_pierwsza(12))
+
+#Zadanie 4
+def f1(x, y):
+    return x * y
+def f2(f, a, b, n):
+    return f(a, b) * n
+print(f2(f1, 1, 2, 3, ))
+
+def f3(x):
+    return 0.5 * x ** 2 - 3
+def Zwf(f, D):
+    wynik4 = []
+    for x in D:
+        y = f(x)
+        wynik4.append(y)
+    return wynik4
+
+def Zw2(f, D):
+    return [f(x) for x in D]
+
+X = [1, 2, 3, 4, 5, 6]
+Y = Zwf(f3, X)
+print(Y)
+
+
+#Zadanie 5
+def ile_liter(tekst):
+    slownik = {}
+    #zbior = set(tekst)
+    for x in tekst:
+        ile = tekst.count(x)
+        slownik[x] = ile
+    return slownik
+print(ile_liter('babcia'))
